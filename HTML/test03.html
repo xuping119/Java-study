@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签练习</title>
+</head>
+<body>
+    <form action="test01.html" method="get">
+        <p> 注册<br/>
+            用户名:<input type="text" name="name">
+            密码：<input type="password" name="password">
+        </p>
+
+        <p>性别
+            <input type="radio" name="sex" value="m" checked>男
+            <input type="radio" name="sex" value="w">女
+        </p>
+        <p>爱好
+            <input type="checkbox" name="love" value="book" checked>看书
+            <input type="checkbox" name="love" value="music" >音乐
+            <input type="checkbox" name="love" value="movie" >电影
+        </p>
+
+        <p>地域
+            <select name="address">
+                <option value="js" />江苏
+                <option value="sh" selected/>上海
+                <option value="sz" />深圳
+                <option value="sc" />四川
+            </select>
+        </p>
+        <!-- 正则表达式 检查邮箱格式-->
+        <p>邮箱
+            <input type="email" name="em" pattern="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
+        </p>
+
+        <p>个人网站
+            <input type="url" name="url" >
+        </p>
+        <p>调节透明度
+            <input type="range" name="url" min="1" max="55" step="2" value="7">
+        </p>
+        <p>站内搜索
+            <input type="search" name="search" value="微博热点"/>
+        </p>
+        <p>上传文件
+            <input type="file" name="file"/>
+            <input type="button" name="upload" value="上传"/>
+        </p>
+
+        <p>哔哩哔哩网站
+            <iframe src="https://www.bilibili.com/" frameborder="0" height="100px" ></iframe>
+        </p>
+
+        <p>留言<br>
+            <textarea name="talk" rows="10" cols="50">填写留言</textarea>
+        </p>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+
+
+    </form>
+
+
+
+</body>
+</html>
